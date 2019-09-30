@@ -6,7 +6,7 @@ body {
 
 .container {
     padding: 3em 0 0 0 ;
-    min-height: 96vh;
+    min-height: 97vh;
     max-width: 800px;
 
 }
@@ -38,7 +38,6 @@ h1, h2, h3, h4 {
     height: 4em;
     border-top: 1px solid #E1E1E1;
     border-bottom: 1px solid #E1E1E1;
-    margin-bottom: 2em;
     text-align: center;
 }
 
@@ -63,9 +62,71 @@ h1, h2, h3, h4 {
     color: #1EAEDB;
 }
 
+.about {
+    margin-top: 3.5rem;
+    margin-bottom: 2.5rem;
+}
+
 .bio {
     text-align: justify;
 }
+
+.ppic {
+    text-align: center;
+}
+
+.ppic img {
+    max-width: 400px;
+}
+
+.folio {
+    margin-top: 3.5rem;
+}
+
+.folio a {
+    color: black;
+    text-decoration: none;
+}
+
+.folio a:hover {
+    color: #1EAEDB;
+}
+
+.folio p {
+    text-align: justify;
+}
+
+.folio h4 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.folio .info {
+    font-size: 0.7em;
+}
+
+.cv {
+    margin-top: 3.5rem;
+}
+
+.cvsec h2 {
+    font-size: 3rem;
+}
+
+.cvsec h4 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cvsec p {
+    text-align: justify;
+}
+
+.cvsec li {
+    margin-bottom: 0.5rem;
+}
+
+
 
 @media (max-width: 800px) {
     .columns {
@@ -77,14 +138,23 @@ h1, h2, h3, h4 {
 
     .contact {
         text-align: center;
-        padding: 0 1em;
+        padding: 0 1.5rem;
     }
 
     .ppic {
-        margin-bottom: 1em;
+        margin-bottom: 1.5rem;
     }
     h1 {
         font-size: 4rem;
+    }
+    .folio h4 {
+        font-size: 1.2em;
+    }
+    .cvsec h2 {
+        font-size: 2.5rem;
+    }
+    .cvsec h4 {
+        font-size: 1.7rem;
     }
 }
 
@@ -95,29 +165,26 @@ h1, h2, h3, h4 {
     header span {
         font-size: 0.7em;
     }
+    .button {
+        font-size: 9px;
+        padding: 0 20px;
+    }
 }
 
 
 @media (max-width: 400px) {
-    .bio {
-        padding: 0 1em;
-    }
     .menu {
         font-size: 0.8em;
-        margin-bottom: 0;
     }
-    header {
-        padding: 0 1em;
+    header, .folio, .bio, .cv {
+        padding: 0 1.5rem;
     }
     header span {
         display: none;
     }
+    .about {
+        margin-top: 0;
+    }
+
 }
 
-.ppic {
-    text-align: center;
-}
-
-.ppic img {
-    max-width: 400px;
-}
