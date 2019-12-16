@@ -6,10 +6,17 @@ body {
 }
 
 .container {
-    padding: 3em 0 0 0 ;
-    min-height: 97vh;
+    padding: 3rem 0;
+    min-height: calc(100vh - 2rem);
     max-width: 800px;
+}
 
+footer {
+    color: #bbb;
+    height: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 2rem;
 }
 
 header {
@@ -28,12 +35,6 @@ header>h1 {
 h1, h2, h3, h4 {
     font-family: 'Lora', serif;
     letter-spacing: normal;
-}
-
-.copy {
-    height: 2vh;
-    text-align: center;
-    font-size: 6pt;
 }
 
 .menu {
@@ -66,7 +67,6 @@ h1, h2, h3, h4 {
 
 .about {
     margin-top: 3.5rem;
-    margin-bottom: 2.5rem;
 }
 
 .bio {
@@ -92,6 +92,10 @@ h1, h2, h3, h4 {
 .folio p {
     text-align: justify;
     margin-bottom: 1.5rem;
+}
+
+.folio p:last-of-type {
+    margin-bottom: 0;
 }
 
 .folio .three {
@@ -126,7 +130,7 @@ h1, h2, h3, h4 {
 
 .folio .title .read {
     font-family: 'Lato', sans-serif;
-    padding-left: 0.5em;
+    padding-left: 1em;
     align-self: center;
 }
 
@@ -156,7 +160,9 @@ h1, h2, h3, h4 {
     margin-bottom: 0.5rem;
 }
 
-
+.cvsec ul:last-of-type {
+    margin: 0;
+}
 
 @media (max-width: 800px) {
     .columns {
@@ -213,17 +219,21 @@ h1, h2, h3, h4 {
     header, .folio, .bio, .cv {
         padding: 0 1.5rem;
     }
+    .container {
+        padding: 2rem 0;
+    }
+    header {
+        margin-bottom: 2rem;
+    }
+    header h1 {
+        margin: 0;
+    }
     header span {
-        display: none;
+        display: block;
     }
     .about {
         margin-top: 0;
     }
-
-}
-
-footer {
-    color: #444;
 }
 
 @media (prefers-color-scheme: dark) {
