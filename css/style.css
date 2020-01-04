@@ -247,8 +247,7 @@ nav li a:hover {
     hr {
         border-top: 1px solid #444;
     }
-    nav {
-        border-top: 1px solid #444;
+    nav, header {
         border-bottom: 1px solid #444;
     }
     .button {
