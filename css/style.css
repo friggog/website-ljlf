@@ -78,7 +78,7 @@ nav li a:hover {
 }
 
 .ppic img {
-    max-width: 400px;
+    max-width: 375px;
 }
 
 .folio {
@@ -183,6 +183,8 @@ nav li a:hover {
 
     .ppic {
         margin-bottom: 1.5rem;
+        max-height: 350px;
+        overflow: hidden;
     }
     h1 {
         font-size: 4rem;
